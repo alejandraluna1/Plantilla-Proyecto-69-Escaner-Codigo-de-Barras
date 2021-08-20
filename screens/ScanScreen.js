@@ -71,7 +71,7 @@ export default class ScanScreen extends React.Component {
               <Text style={{textAlign: 'center', fontSize: 30}}>Escáner de Código de Barras</Text>
             </View>
           <Text style={styles.displayText}>{
-            hasCameraPermissions===true ? this.state.scannedData: "Request Camera Permission"
+            hasCameraPermissions===true ? this.state.scannedData: "Solicitar Permiso para la Cámara"
           }</Text>     
 
           <TouchableOpacity
