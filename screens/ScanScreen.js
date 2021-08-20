@@ -68,7 +68,7 @@ export default class ScanScreen extends React.Component {
               <Image
                 source={require("../assets/camera.jpg")}
                 style={{width:200, height: 200}}/>
-              <Text style={{textAlign: 'center', fontSize: 30}}>Bar Code Scanner</Text>
+              <Text style={{textAlign: 'center', fontSize: 30}}>Escáner de Código de Barras</Text>
             </View>
           <Text style={styles.displayText}>{
             hasCameraPermissions===true ? this.state.scannedData: "Request Camera Permission"
@@ -78,7 +78,7 @@ export default class ScanScreen extends React.Component {
             onPress={this.getCameraPermissions}
             style= {styles.scanButton} 
             title = "Bar Code Scanner">
-            <Text style={styles.buttonText}>Scan QR Code</Text>
+            <Text style={styles.buttonText}>Escanear Código QR</Text>
           </TouchableOpacity>
         </View>
         );
